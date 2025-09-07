@@ -70,7 +70,7 @@ command /resetallmeta:
     permission: admin.reset
     trigger:
         loop all players:
-            set {_} to fpapi(2, "remove_all", loop-player, "")
+            fpapi(2, "remove_all", loop-player, "")
         send "全員の prefix と suffix を削除しました。"
 ```
 ### suffix が未設定のプレイヤーを判定
